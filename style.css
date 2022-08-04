@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    /*font-family: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;;*/
+    font-family: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    margin: 20px 0;
+}
+
+article {
+    width: 21cm;
+    min-height: 29.7cm;
+    background: white;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 1em;
+}
+@media print {
+    body {
+        margin: 0;
+    }
+
+    .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+    }
+}
+body {
+}
+
+p {
+    margin: .3em 0;
+}
+
+h1 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+strong {
+    font-weight: normal;
+    color: #10b5e6;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p,
+li {
+    color: #666;
+}
+
+strong {
+    font-weight: normal;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.bio {
+    position: relative;
+}
+
+.bio img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.projects h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.projects p {
+    color: #666;
+}
+
+.projects strong {
+    color: #10b5e6;
+}
+
+.projects > ol {
+    margin-top: 0;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.projects > ol > li {
+    margin-bottom: 24px;
+}
+
+.projects > ol > li > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects > ol > li h3 {
+    display: inline-block;
+}
+
+.skills {
+}
+
+#skills {
+
+    width: 500px;
+    height: 270px;
+}
+
+@media print {
+    #skills {
+        display: none;
+    }
+}
+
+
+.skills > .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills > .wrapper > :first-child {
+    margin-right: 24px;
+}
+
+.skills > .wrapper > #skills {
+    overflow: visible;
+}
+
+.skills > .wrapper > ul {
+    color: #666;
+}
+
+.skills > .wrapper strong {
+    color: #10b5e6;
+}
+
+.skills > .wrapper > ul > li {
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.openSource {
+}
+
+.openSource > h2 {
+}
+
+.openSource header img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.openSource > ul {
+}
+
+.openSource > ul > li {
+    margin-bottom: 24px;
+}
+
+.openSource header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.openSource h3 {
+}
+
+.jobs {
+}
+
+.jobs > h2 {
+}
+
+.jobs > ol {
+}
+
+.jobs > ol > li {
+    margin: 12px 0;
+}
+
+.jobs header {
+    display: flex;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.jobs header > h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.jobs header > h4 {
+    margin-left: 1em;
+    font-size: 18px;
+}
+
+.jobs header > span {
+    font-size: 18px;
+    margin-left: auto;
+}
+
+@media (max-width: 500px) {
+    body {
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+        height: auto;
+    }
+
+    .bio img {
+        display: none;
+    }
+
+    #skills {
+        display: none;
+    }
+
+    .skills .wrapper {
+        flex-direction: column;
+    }
+
+    #skills {
+        width: auto;
+    }
+
+    .jobs header {
+        flex-direction: column;
+    }
+
+    .jobs header > h3,
+    .jobs header > h4,
+    .jobs header > span {
+        margin: 0;
+    }
+}

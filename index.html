@@ -13,16 +13,46 @@
 <article>
     <section class="bio">
         <h1>李齐一</h1>
-        <!--        <img src="./images/picture.jpg" alt="" height="100">-->
+        <img src="./images/picture.jpg" alt="" height="100">
         <p>
             男 | 26岁 | 前端开发工程师 | 西安
         </p>
         <p>
-            手机：<a href="tel:13201759671">13201759671</a> | 微信：13201759671 | 邮箱：<a href="mailto:llqiyi@outlook.com">llqiyi@outlook.com</a>
+            手机：<a href="tel:13201759671">13201759671</a> | 微信：13201759671 | 邮箱：<a
+            href="mailto:llqiyi@outlook.com">llqiyi@outlook.com</a>
         </p>
         <p>毕业院校：西安航空学院 | 本科 | 测控技术与仪器</p>
     </section>
-
+    <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h4>北京星华惠康科技股份有限公司</h4>
+                    <span><time>2020年2月</time>~<time>至今</time></span>
+                </header>
+                <ul>
+                    <li>负责开发公司的前端应用，包括pc管理端、移动、小程序等，参与程序设计工作。</li>
+                    <li>与产品经理和UI设计师合作，确保产品的可用性和用户友好性。</li>
+                    <li>负责协调团队成员并与后端开发人员密切合作，以确保前后端代码的协调和一致性。</li>
+                    <li>
+                        根据需求文档实现网站和应用程序的用户界面与交互，添加相应的动画效果等，并保持响应式设计和跨浏览器兼容性。
+                    </li>
+                    <li>帮助团队成员使用React.js框架开发网站和Web应用程序，在成员遇到问题时提供支持。</li>
+                    <li>分析和解决网站和应用程序的问题，与团队合作制定解决方案并实施。</li>
+                </ul>
+            </li>
+            <li>
+                <header>
+                    <h4>掌门教育科技有限公司</h4>
+                    <span><time>2019年7月</time>~<time>2019年12月</time></span>
+                </header>
+                <ul>
+                    <li>从事教学班主任工作。</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
     <section class="projects">
         <h2>项目经历</h2>
         <ol>
@@ -30,175 +60,117 @@
                 <header>
                     <h3>疫情隔离管理系统</h3>
                 </header>
-                <p>包含多种使用场景，涵盖患者的转运、隔离、管理等功能</p>
-                <p>该项目页面开发使用的技术栈主要为 <strong>React</strong> + <strong>Antd</strong> ,使用 <strong>redux</strong> 作为数据管理，以
-                    <strong>ws</strong> 消息作为前后端通信。</p>
-                <p>在该项目中独立负责开发隔离人员管理、隔离登记、转运任务调度等模块。</p>
+                <p>分为pc管理端与手机移动端。</p>
+                <p>
+                    其中管理端大致分为疾控卫健角色、转运系统角色、隔离点角色等。疾控健委角色负责对患者的信息流调、管控分配、下发转运等；转运中心角色根据接收下发的转运函生成转运单、分配司机、指定隔离点等；隔离点角色负责接收患者、分配房间、患者健康信息检测等，以及对隔离房间、楼层等信息的维护。
+                </p>
+                <p>
+                    移动端分为司机端、患者端以及隔离点管理端。司机端含有接取转运单、接送患者到隔离点交接等功能；患者端包含上车登记、入住登记、健康信息填报等功能；隔离点管理端负责录入患者并分配房间信息，以及后续核酸采样工作安排等功能。
+                </p>
+                <p>
+                    在该项目中独立负责开发隔离人员管理、患者管控信息流调、隔离登记、转运任务调度，移动端的司机接单、患者入住登记、健康信息上报等模块。
+                </p>
+                <p>
+                    该项目页面开发使用的技术栈主要为 <strong>React</strong> 、 <strong>Antd</strong> <strong>Hooks</strong>， 以 <strong>WS</strong> 作为前后端通信。
+                </p>
             </li>
             <li>
                 <header>
                     <h3>健康广场小程序</h3>
                 </header>
-                <p>基于公司原有微信小程序项目，改造为 <strong>uniapp</strong></p>
-                <p>在该项目中负责疫苗预约模块，包括找疫苗、找社区、预约登记等。</p>
-            </li>
-            <li>
-                <header>
-                    <h3>疫苗预约h5</h3>
-                </header>
-                <p>一款基于 <strong>React</strong> + <strong>antd-mobile</strong> 的移动端疫苗预约项目。</p>
-                <p>采用 <strong>rem</strong> 作为不同屏幕尺寸的适配方案。</p>
-                <p>在该项目中主要负责开发社区疫苗展示、疫苗详情、疫苗登记等页面。</p>
-            </li>
-            <li>
-                <header>
-                    <h3>医院预约系统</h3>
-                </header>
-                <p>包含预约挂号、排班管理、排队叫号等功能，应用于患者就诊、医院管理。</p>
-                <p>在该项目中负责对以上功能模块的维护、更新功能等。</p>
-            </li>
-            <li>
-                <header>
-                    <h3>little-ui</h3>
-                </header>
                 <p>
-                    一款基于 <strong>Vue3</strong> 开发的自制简易 UI 框架。</p>
-                <p>
-
-                    目前主要组件有 <strong>按钮</strong>、<strong>tab切换</strong>、<strong>对话框</strong>、<strong>switch</strong> 等组件。
+                    此项目包含患者的预约挂号、在线问诊、疫苗预约等功能。我主要负责疫苗预约模块。此模块包含社区查找、疫苗查找、疫苗登记、预约时间、登记公示、预约记录等功能。
                 </p>
                 <p>
-                    该项目使用到了 <strong>Vue3</strong> +
-                    <strong>typescript</strong> + <strong>scss</strong> 等技术进行组件的开发，采用 <strong>vite</strong>
-                    搭建官网以及后续的构建等。
+                    参与了将微信小程序改造为 <strong>uniapp</strong> ，并将其打包为支付宝小程序
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>排班预约叫号系统</h3>
+                </header>
+                <p>该项目含有门诊排班、排队叫号、服务管理等模块。</p>
+                <p>其中服务管理模块用来维护门诊排班叫号所用到的服务、以及医生科室信息等。</p>
+                <p>
+                    排班模块则可以根据现有的班次信息、诊室、以及关联的服务等，来制定门诊班表计划，发布之后即可生成可供预约的号源。
+                </p>
+                <p>
+                    排队叫号则是根据已发布的号源、服务等生成不同的队列；含有分诊屏可以用来展示队列信息，以及展示医生端发出的叫号信息等；相对的医生端则是展示自己所负责的服务队列，队列中为通过预约或门诊指定的患者信息，可以对患者进行叫号操作。
+                </p>
+                <p>在该项目中负责对以上功能模块的维护、更新功能等。</p>
+                <p>使用到的技术栈为 <strong>React</strong> + <strong>Antd</strong> + <strong>Redux</strong>，采用 <strong>WS</strong> 作为医生端与排队叫号pc端的即时通讯方式。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>医院大屏展示项目</h3>
+                </header>
+                <p>该项目包括医院信息简介、科室专家信息、门诊科室排班、门诊流量统计等模块。</p>
+                <p>在图表方面使用到了 <strong>echarts</strong>。大屏的适配上使用到了 <strong>rem</strong> 作为单位，以确保达到设计图上的显示效果。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>小喵记账</h3>
+                </header>
+                <p>
+                    此项目采用前后端分离的方式开发，且前端后端都是自己从零搭建到部署上线的。
+                </p>
+                <p>
+                    前端方面使用到了 <strong>Vue3</strong> + <strong>Vite</strong> + <strong>Tsx</strong> + <strong>Pinia</strong> 的一个组合，样式方面采用 <strong>CSS Modules</strong>，采用 <strong>JWT</strong> 作为登录方案，使用了 <strong>VueRouter</strong> 中的路由守卫做登录鉴权，封装了一些常用的组件与函数等，在统计图表上，使用了 <strong>echarts</strong> 组件。
+                </p>
+                <p>
+                    后端方面使用到了 <strong>Ruby</strong> + <strong>Rails</strong> 的搭配。整个API采用 <strong>Restful</strong> 风格，基于测试驱动开发，实现JWT登录，使用到了中间件鉴权，采用 <strong>Docker</strong> 对项目进行容器化。
                 </p>
                 <span>
-                  <a href="https://github.com/qiyi-li/little_ui.git/">源码链接</a>
-                  <a href="http://liqiyi.xyz/little-ui-website/index.html">项目预览</a>
+                  <a href="https://github.com/qiyi-li/miao-fe">前端源码链接</a>
+                  <a href="https://github.com/qiyi-li/miao-be">后端源码链接</a>
+                  <a href="http://162.14.67.92:8080/#/items">项目预览</a>
                 </span>
             </li>
             <li>
                 <header>
-                    <h3>流白记账</h3>
+                    <h3>SSR个人博客</h3>
                 </header>
-                <p>
-                    是一款以记账为主要需求，由我自己独立开发的一款基于 <strong>Vue</strong> / <strong>React</strong> 的记账应用。
-                </p>
-                <br>
-                <h4>Vue 版本</h4>
-                <p>
-                    Vue 版本采用 <strong>Vue Cli</strong>进行搭建，基于 <strong>Vuex</strong> 和 <strong>Vue Router</strong>实现，数据管理采用
-                    <strong>LocalStorage</strong>，语言采用更为严谨的 <strong>TypeScript</strong>。各组件封装模块化，维护可读性好。
-                </p>
+                <p>此项目是一个基于 <strong>Next</strong> + <strong>typeorm</strong> 开发的服务端渲染的项目。</p>
+                <p>数据库搭配上使用了 <strong>postgresql</strong>。登录采用了传统的 <strong>cookie</strong> 方式。</p>
                 <span>
-              <a href="https://github.com/qiyi-li/money-manager-vue">源码链接</a>
-              <a href="http://liubai-a.gitee.io/liubaijizhangwebsite/#/money">项目预览</a>
-          </span>
-                <br><br>
-                <h4>React 版本</h4>
-                <p>
-                    这个版本主要运用 React 相关技术，页面跳转采用 <strong>React Router</strong>，同样也是使用 <strong>LocalStorage</strong>
-                    来存储用户的数据，编写语言仍选择了 TypeScript ，还用到了 <strong>自定义 Hooks</strong> / <strong>webpack</strong> 等技术。
+                  <a href="https://github.com/qiyi-li/next-blog">源码链接</a>
+                  <a href="http://http://162.14.67.92:4000/">项目预览</a>
+                </span>
+            </li>
 
-                </p>
-                <span>
-              <a href="https://github.com/qiyi-li/money-manager-react">源码链接</a>
-              <a href="https://liubai-a.gitee.io/money-manager-react-website">项目预览</a>
-          </span>
-            </li>
-        </ol>
-    </section>
-    <br>
-    <section class="jobs">
-        <h2>工作经历</h2>
-        <ol>
-            <li>
-                <header>
-                    <h4>北京星华惠康科技股份有限公司</h4>
-                    <span><time>2019年7月</time>~<time>至今</time></span>
-                </header>
-                <ul>
-                    <li>
-                        对现有公司的排队叫号、排班管理等业务进行日常的维护工作。
-                    </li>
-                    <li>
-                        参与开发疫苗预约h5页面、某中医院大屏展示项目、疫情隔离系统等。
-                    </li>
-                    <li>
-                        梳理数据需求，协同定义接口文档，编写维护公司项目常用组件。
-                    </li>
-                </ul>
-            </li>
         </ol>
     </section>
     <section class="skills">
         <h2>技能</h2>
         <div class="wrapper">
-            <div id="skills"></div>
             <ul>
                 <li>熟悉页面制作技巧，能将设计稿 <strong>完美还原</strong></li>
-                <li>熟悉 <strong>前后端分离</strong> 技术，包括 AXIOS、跨域、前端路由、Cookie、Session 等</li>
-                <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCli、VueRouter、Vuex 等</li>
-                <li>熟练掌握 <strong>React全家桶</strong> 的使用，包括 create-react-app、ReactRouter、ReactHooks、Redux 等</li>
-                <li>熟悉 ES6，包括 let / Promise / await / 解构赋值等</li>
+                <li>熟悉 <strong>前后端分离</strong> 技术，包括 AXIOS、跨域、前端路由、Cookie、Session、JWT 等</li>
+                <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCli、VueRouter、Vite、Pinia 等</li>
+                <li>熟练掌握 <strong>React全家桶</strong> 的使用，包括 create-react-app、ReactRouter、ReactHooks、Redux 等
+                </li>
+                <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 解构赋值等</li>
                 <li>熟练使用 Antd 等常用的组件库，快速完成开发任务</li>
                 <li>熟悉 <strong>echarts</strong> 数据展示工具的使用</li>
                 <li>熟悉 <strong>TypeScript</strong> 的使用</li>
-                <li>了解 <strong>Webpack 的配置和优化</strong></li>
+                <li>熟悉 <strong>Webpack、Vite</strong> 的配置和优化</li>
             </ul>
         </div>
     </section>
-
-
-    <!--    <section class="openSource">
-            <h2>开源项目</h2>
-            <ul>
-                <li>
-                    <header>
-                        <h3>自己写的 DOM 库</h3>
-                        <a href="https://github.com/a-lei-7/dom-1">源码链接</a>
-                    </header>
-                    <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-                </li>
-                <li>
-                    <header>
-                        <h3>简易画板</h3>
-                        <span>
-                  <a href="https://github.com/a-lei-7/canvas-demo-1">源码链接</a>
-                  <a href="http://liqiyi.xyz/canvas-demo-1/">项目预览</a>
-                </span>
-                    </header>
-                    <p>我在学习 <strong>Canvas</strong> 时做的一个小作品，实现简单的画笔功能</p>
-                </li>
-            </ul>
-        </section>-->
-
-
-    <section class="others">
+<!--    <section class="others">
         <h2>其他链接</h2>
         <ul>
             <li>
-                <a href="https://www.yuque.com/books/share/fcc17b53-db93-48c0-bba1-d0033db376e7?#">我的博客</a>，总结了一些学习过程中遇到的问题
-            </li>
-            <li>
                 <a href="https://github.com/qiyi-li">我的 GitHub</a>，有一些小项目
             </li>
+            <li>
+                <a href="https://www.yuque.com/books/share/fcc17b53-db93-48c0-bba1-d0033db376e7?#">我的博客</a>，总结了一些学习过程中遇到的问题
+            </li>
         </ul>
-    </section>
-
-    <!--
-
-        <section class="education">
-            <h2>教育经历</h2>
-            <p>
-                <span><time>2014年</time>~<time>2019年</time></span>
-                西安航空学院 电子工程学院 本科
-            </p>
-        </section>-->
+    </section>-->
 
 </article>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
 <script src="./main.js"></script>
 </body>
-
 </html>

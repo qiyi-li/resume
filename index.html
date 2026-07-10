@@ -15,7 +15,7 @@
         <h1>李齐一</h1>
         <img src="./images/picture.jpg" alt="" height="100">
         <p>
-            男 | 26岁 | 前端开发工程师 | 西安
+            男 | 30岁 | 前端开发工程师 | 西安
         </p>
         <p>
             手机：<a href="tel:13201759671">13201759671</a> | 微信：13201759671 | 邮箱：<a
@@ -28,8 +28,28 @@
         <ol>
             <li>
                 <header>
+                    <h4>纬致芯创科技有限公司</h4>
+                    <span><time>2023年6月</time>~<time>2026年7月</time></span>
+                </header>
+                <ul>
+                    <li>
+                        主要负责公司云原生研发效能平台的前端开发，涉及 <strong>CNAP</strong> 应用部署平台、<strong>iCode</strong> 代码托管平台、<strong>OneTool（MCP）</strong> AI 工具服务中心等多条产品线。
+                    </li>
+                    <li>
+                        技术栈以 <strong>React18</strong> + <strong>TypeScript</strong> + <strong>微前端（qiankun）</strong> 为主，配合 region-core 状态管理、Formik 表单、WebSocket 实时通信等。
+                    </li>
+                    <li>
+                        在 CNAP 参与应用、环境、部署、运行时等核心链路的前端建设；在 iCode 落地代码智能评审、团队用量视图等能力；在 MCP 负责 Server 创建流程等模块的设计与实现。
+                    </li>
+                    <li>
+                        与产品、设计、服务端紧密协作，先对齐 API 协议再开发，遵循 CR 评审规范，保障功能质量与交付节奏。
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <header>
                     <h4>北京星华惠康科技股份有限公司</h4>
-                    <span><time>2020年2月</time>~<time>至今</time></span>
+                    <span><time>2020年2月</time>~<time>2023年5月</time></span>
                 </header>
                 <ul>
                     <li>负责开发公司的前端应用，包括pc管理端、移动、小程序等，参与程序设计工作。</li>
@@ -42,20 +62,57 @@
                     <li>分析和解决网站和应用程序的问题，与团队合作制定解决方案并实施。</li>
                 </ul>
             </li>
-            <li>
-                <header>
-                    <h4>掌门教育科技有限公司</h4>
-                    <span><time>2019年7月</time>~<time>2019年12月</time></span>
-                </header>
-                <ul>
-                    <li>从事教学班主任工作。</li>
-                </ul>
-            </li>
         </ol>
     </section>
     <section class="projects">
         <h2>项目经历</h2>
         <ol>
+            <li>
+                <header>
+                    <h3>CNAP 云原生应用部署平台</h3>
+                </header>
+                <p>面向百度核心业务大规模上云的云原生应用部署与运维（PaaS）平台，支撑多云联邦调度与智能运维，服务厂内 UPMP、地图、公有云等重点业务上云。</p>
+                <p>
+                    长期负责该平台前端核心链路建设，覆盖应用、环境、部署、运行时、集群、权限审批等全流程，主要贡献按方向归纳如下：
+                </p>
+                <ul>
+                    <li><strong>部署与发布</strong>：落地部署<strong>智能拦截</strong>（多规则检查/拦截）与<strong>多人工检查、多人确认</strong>机制提升发布稳定性；支持回滚逆序/全并发、单集群临时部署、一键跳过指定 Stage 环节，以及服务代码与配置分离后的独立版本管理。</li>
+                    <li><strong>集群管理</strong>：从 0 到 1 搭建 <strong>CCE 集群管理</strong>（多云凭证、节点创建）、<strong>集群调度策略</strong>与<strong>联邦集群管理</strong>（支持 FedDeployment、缓解资源不足），并完善集群分组管理、线上版本展示、<strong>GPU Quota</strong> 管理与资源使用率可视化。</li>
+                    <li><strong>运行时运维</strong>：整合 Pod 详情信息聚合展示，支持 Pod 列表<strong>跨页批量操作</strong>（重启/屏蔽/迁移）与细分权限、Pod <strong>临时登录授权</strong>（授权回收/修改）、SCI 集群 WebSSH 与原地 Debug，以及运行时跳转智能监控的上下文透传。</li>
+                    <li><strong>权限与审批</strong>：优化账户权限申请流程与<strong>审批绿色通道</strong>（停更期间按应用/部署单粒度豁免），支持审批策略审批人复制/继承、PA 强制解锁、测试实例按应用粒度回收等，持续提升线上稳定性。</li>
+                    <li><strong>通知与数据配送</strong>：建设<strong>通知管理</strong>模块，监听部署事件并支持邮件、服务号、如流群/电话等多渠道通知；完善<strong>数据配送策略</strong>，支持多环境、多配送策略、源地址/版本自动填充及手动配送。</li>
+                    <li><strong>应用模板与密钥</strong>：新增<strong>应用模板管理</strong>模块，支持模板化的首次部署流程编排；支持 <strong>Secrets</strong> 托管账号密码及运行配置密钥的按需明文展示。</li>
+                </ul>
+                <p>
+                    项目基于 <strong>React18</strong> + <strong>TypeScript</strong>，以 <strong>微前端（qiankun）</strong> 形式接入统一控制台，采用 <strong>region-core</strong> 管理状态，<strong>Formik</strong>、<strong>Antd</strong> 处理复杂表单，并使用 <strong>WebSocket</strong>、<strong>xterm</strong> 实现实时日志与终端能力。
+                </p>
+            </li>
+            <li>
+                <header>
+                    <h3>iCode 研发效能平台（AI 原生）</h3>
+                </header>
+                <p>iCode 是公司内部的代码托管与研发协作平台，围绕「AI 原生研发」方向参与多项能力建设，推动研发模式从工具辅助向人机协同升级。</p>
+                <ul>
+                    <li><strong>Rules 管理</strong>：支持基于代码库分支自动生成契合当前代码库的 Rules，降低编写门槛，便于团队统一管理，并提升 Coding Agent 的代码生成效果与渗透率；</li>
+                    <li><strong>代码智能评审</strong>：改造评审入口，接入数字员工对当前评审进行解读，辅助理解提交代码、定位与修复问题，提升代码质量；</li>
+                    <li><strong>团队视图</strong>：新增 Coding Agent 实践榜单，量化并展示各团队及个人在 AI 辅助编程方面的落地情况；</li>
+                    <li><strong>AI IDE 接入</strong>：替换原有 VSCode 入口，优先推荐 Comate AI IDE，并优化控制台列表、代码空间列表的使用体验；</li>
+                    <li>在 icafe、评审入口、Rules 页面等接入运营抽奖活动，推广数字员工与 AI IDE 的使用。</li>
+                </ul>
+                <p>关键数据：智能评审累计 PV 2w+、UV 4900+；生成 Rules 日均 PV 150+；运营活动日均 UV 200+。</p>
+                <p>技术栈为 <strong>React18</strong> + <strong>TypeScript</strong>，配合代码 Diff 视图渲染、<strong>AG Grid</strong> 与 <strong>echarts</strong> 数据可视化等。</p>
+            </li>
+            <li>
+                <header>
+                    <h3>OneTool（MCP）AI 工具平台</h3>
+                </header>
+                <p>OneTool 是公司内部的 AI 工具（MCP，Model Context Protocol）服务中心，参与并主导 MCP 平台一期建设，构建 AI 工具生态。</p>
+                <p>
+                    负责 MCP Server 全生命周期的前端设计与实现：支持 Server 的<strong>创建、编辑</strong>，以及<strong>发布、订阅、收藏</strong>等能力，打通工具从创建到广场发现、调试的链路，降低 AI 工具的接入与复用门槛。
+                </p>
+                <p>关键数据：MCP 广场累计正式发布各类型 MCP Server 207 个。</p>
+                <p>技术栈为 <strong>React18</strong> + <strong>TypeScript</strong>，涉及动态表单、<strong>JSON Schema</strong> 转换等。</p>
+            </li>
             <li>
                 <header>
                     <h3>疫情隔离管理系统</h3>
@@ -91,24 +148,6 @@
             </li>
             <li>
                 <header>
-                    <h3>健康广场小程序</h3>
-                </header>
-                <p>
-                    此项目包含患者的预约挂号、在线问诊、疫苗预约等功能。我主要负责疫苗预约模块。此模块包含社区查找、疫苗查找、疫苗登记、预约时间、登记公示、预约记录等功能。
-                </p>
-                <p>
-                    参与了将微信小程序改造为 <strong>uniapp</strong> ，并将其打包为支付宝小程序
-                </p>
-            </li>
-            <li>
-                <header>
-                    <h3>医院大屏展示项目</h3>
-                </header>
-                <p>该项目包括医院信息简介、科室专家信息、门诊科室排班、门诊流量统计等模块。</p>
-                <p>在图表方面使用到了 <strong>echarts</strong>。大屏的适配上使用到了 <strong>rem</strong> 作为单位，以确保达到设计图上的显示效果。</p>
-            </li>
-            <li>
-                <header>
                     <h3>小喵记账</h3>
                 </header>
                 <p>
@@ -123,18 +162,6 @@
                 <span>
                   <a href="https://github.com/qiyi-li/miao-fe">前端源码链接</a>
                   <a href="https://github.com/qiyi-li/miao-be">后端源码链接</a>
-                  <a href="http://162.14.67.92:8080/#/items">项目预览</a>
-                </span>
-            </li>
-            <li>
-                <header>
-                    <h3>SSR个人博客</h3>
-                </header>
-                <p>此项目是一个基于 <strong>Next</strong> + <strong>typeorm</strong> 开发的服务端渲染的项目。</p>
-                <p>数据库搭配上使用了 <strong>postgresql</strong>。登录采用了传统的 <strong>cookie</strong> 方式。</p>
-                <span>
-                  <a href="https://github.com/qiyi-li/next-blog">源码链接</a>
-                  <a href="http://http://162.14.67.92:4000/">项目预览</a>
                 </span>
             </li>
 
@@ -144,15 +171,14 @@
         <h2>技能</h2>
         <div class="wrapper">
             <ul>
-                <li>熟悉页面制作技巧，能将设计稿 <strong>完美还原</strong></li>
-                <li>熟悉 <strong>前后端分离</strong> 技术，包括 AXIOS、跨域、前端路由、Cookie、Session、JWT 等</li>
-                <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCli、VueRouter、Vite、Pinia 等</li>
-                <li>熟练掌握 <strong>React全家桶</strong> 的使用，包括 create-react-app、ReactRouter、ReactHooks、Redux 等</li>
-                <li>熟悉 <strong>ES6</strong>，包括 let / Promise / await / 解构赋值等</li>
-                <li>熟练使用 Antd 等常用的组件库，快速完成开发任务，熟悉 <strong>echarts</strong> 数据展示工具的使用</li>
-                <li>熟悉 <strong>Webpack、Vite</strong> 的配置和优化</li>
-                <li>熟悉 <strong>TypeScript</strong>，熟悉 <strong>Nextjs</strong>、<strong>Ruby on Rails</strong> 的使用</li>
-                <li>了解 <strong>docker</strong>、<strong>nginx</strong> 的用法等</li>
+                <li><strong>AI 原生研发 · MCP</strong>：主导建设 <strong>MCP（Model Context Protocol）</strong> 工具平台，熟悉工具的创建、发布、订阅与 Agent 调用（Tool / Function Calling）机制，能将业务能力封装为可复用的 AI 工具并接入生态。</li>
+                <li><strong>Coding Agent / AI IDE</strong>：熟悉 Coding Agent、AI IDE（如 Comate）在研发流程中的落地，理解通过 <strong>Rules / 上下文工程</strong> 提升代码生成质量与渗透率的方法。</li>
+                <li><strong>大模型应用集成</strong>：具备将 LLM 能力集成到产品的经验，包括 LLM API 调用、<strong>流式输出（SSE / WebSocket）</strong>、数字员工（AI Agent）在代码智能评审等场景的落地。</li>
+                <li><strong>AI 工作流理解</strong>：了解 <strong>提示词工程（Prompt Engineering）</strong>、<strong>RAG 检索增强</strong>、上下文管理、Agent 编排等 AI 应用常见范式与工程实践。</li>
+                <li><strong>前端</strong>：熟练掌握 <strong>React 全家桶</strong> 与 <strong>Vue 全家桶</strong>（Hooks / Router / Redux / Pinia / Vite），熟悉 <strong>TypeScript</strong>、<strong>微前端（qiankun）</strong> 及 region-core、Formik 等状态与表单方案。</li>
+                <li><strong>工程与可视化</strong>：熟悉 <strong>Webpack / Vite</strong> 的配置与优化，熟练使用 Antd 等组件库，掌握 <strong>echarts</strong>、<strong>AG Grid</strong> 等数据可视化工具，能高保真还原设计稿。</li>
+                <li><strong>后端 / 全栈</strong>：熟悉 <strong>Node.js</strong>、<strong>Ruby on Rails</strong> 后端开发与 <strong>Next.js</strong> 服务端渲染，掌握 <strong>RESTful</strong> API 设计、JWT / Session 鉴权、前后端分离，具备从 0 到 1 独立搭建并部署上线全栈项目的经验。</li>
+                <li><strong>运维基础</strong>：了解 <strong>Docker</strong> 容器化、<strong>nginx</strong> 部署等工程化能力。</li>
             </ul>
         </div>
     </section>

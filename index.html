@@ -26,7 +26,7 @@
     <section class="summary">
         <h2>个人简介</h2>
         <p>
-            6 年前端开发经验，深耕企业级中后台与平台型产品，参与 <strong>CNAP</strong> 云原生部署平台、<strong>iCode</strong> 研发效能平台、<strong>OneTool（MCP）</strong> AI 工具平台等多个大型项目的前端建设。深度实践 <strong>AI 原生研发</strong>：参与 MCP 工具平台建设，熟悉 Coding Agent、AI IDE、Tool / Function Calling 与 LLM 应用集成。同时具备 <strong>Node.js / Next.js</strong> 后端与全栈项目的独立交付经验，能从 0 到 1 搭建、部署并上线。求职方向：<strong>AI 全栈开发</strong>。
+            6 年前端开发经验，深耕企业级中后台与平台型产品，参与 <strong>CNAP</strong> 云原生部署平台、<strong>iCode</strong> 研发效能平台、<strong>OneTool（MCP）</strong> AI 工具平台等多个大型项目的前端建设。深度实践 <strong>AI 原生研发</strong>：参与 MCP 工具平台建设，熟悉 Coding Agent、AI IDE、Tool / Function Calling、<strong>RAG</strong> 与 LLM 应用集成。同时具备 <strong>Go / Node.js / Next.js</strong> 后端与全栈项目的独立交付经验，能从 0 到 1 搭建、部署并上线。求职方向：<strong>AI 全栈开发</strong>。
         </p>
     </section>
     <section class="jobs">
@@ -115,15 +115,16 @@
                 <header>
                     <h3>GopherAI 全栈 AI 应用平台（个人项目 · Go + Vue）</h3>
                 </header>
-                <p>基于 <strong>Go + Gin</strong> 构建的全栈 Web 应用平台，集成 AI 对话与图像识别能力，前后端分离并容器化部署，覆盖「用户请求 → 后端处理 → AI 推理 → 数据落库 → 前端实时展示」的全链路。</p>
+                <p>基于 <strong>Go + Gin</strong> 构建的全栈 AI 应用平台，集成智能对话、<strong>RAG 知识库问答</strong>与图像识别能力，前后端分离并容器化部署，覆盖「用户请求 → 后端处理 → 检索增强 / AI 推理 → 数据落库 → 前端实时展示」的全链路。</p>
                 <ul>
                     <li><strong>AI 对话服务</strong>：接入通义千问等 LLM，支持多轮对话与 <strong>SSE 流式输出</strong>，通过 <strong>RabbitMQ</strong> 异步持久化会话消息，实现解耦、削峰与高吞吐；</li>
+                    <li><strong>RAG 知识库</strong>：实现文档解析、文本切分、向量化入库、相似度检索与上下文拼接，将私有知识作为提示词上下文注入 LLM，提升领域问答准确性与可追溯性；</li>
                     <li><strong>图像识别服务</strong>：基于 <strong>ONNX Runtime</strong> 加载 MobileNetV2 模型完成图像分类推理，处理多格式图片的解码、缩放与归一化预处理；</li>
                     <li><strong>用户服务</strong>：实现邮箱验证码注册、<strong>JWT</strong> 鉴权（支持 Bearer 头与 URL 参数两种方式），<strong>Redis</strong> 缓存验证码与 Token；</li>
-                    <li>采用 <strong>Controller / Service / DAO</strong> 分层与工厂模式组织代码，<strong>GORM</strong> 操作 MySQL，整体支持高并发与异步处理；</li>
+                    <li>采用 <strong>Controller / Service / DAO</strong> 分层与工厂模式组织代码，<strong>GORM</strong> 操作 MySQL，配合缓存、消息队列与流式响应支撑高并发场景；</li>
                     <li>使用 <strong>Docker Compose</strong> 一键编排后端、MySQL、Redis、RabbitMQ、ONNX Runtime，具备完整可上线运行能力。</li>
                 </ul>
-                <p>技术栈：<strong>Go</strong>、<strong>Gin</strong>、<strong>GORM</strong>、<strong>MySQL</strong>、<strong>Redis</strong>、<strong>RabbitMQ</strong>、<strong>ONNX Runtime</strong>、<strong>Vue.js</strong> + Axios、<strong>Docker</strong>；后端采用 RESTful + SSE，前后端分离设计。</p>
+                <p>技术栈：<strong>Go</strong>、<strong>Gin</strong>、<strong>GORM</strong>、<strong>MySQL</strong>、<strong>Redis</strong>、<strong>RabbitMQ</strong>、<strong>RAG</strong>、<strong>Embedding</strong>、<strong>ONNX Runtime</strong>、<strong>Vue.js</strong> + Axios、<strong>Docker</strong>；后端采用 RESTful + SSE，前后端分离设计。</p>
             </li>
             <li>
                 <header>
@@ -157,7 +158,7 @@
         <h2>技能</h2>
         <div class="wrapper">
             <ul>
-                <li><strong>AI 应用与工作流</strong>：熟悉 <strong>MCP（Model Context Protocol）</strong> 工具平台的创建/发布/订阅与 <strong>Tool / Function Calling</strong> 机制；熟悉 Coding Agent、AI IDE（Comate）落地与 Rules / 上下文工程；具备 <strong>LLM API 调用</strong>、<strong>流式输出（SSE / WebSocket）</strong> 等大模型集成经验；了解提示词工程、Agent 工具调用生态等常见范式。</li>
+                <li><strong>AI 应用与工作流</strong>：熟悉 <strong>MCP（Model Context Protocol）</strong> 工具平台的创建/发布/订阅与 <strong>Tool / Function Calling</strong> 机制；熟悉 Coding Agent、AI IDE（Comate）落地与 Rules / 上下文工程；具备 <strong>LLM API 调用</strong>、<strong>RAG / Embedding / 向量检索</strong>、<strong>流式输出（SSE / WebSocket）</strong> 等大模型集成经验；了解提示词工程、Agent 工具调用生态等常见范式。</li>
                 <li><strong>前端</strong>：精通 <strong>React 全家桶</strong>，熟练 <strong>Vue 全家桶</strong>（Hooks / Router / Redux / Pinia / Vite）与 <strong>TypeScript</strong>；熟悉<strong>微前端（qiankun）</strong>、region-core、Formik；熟练 Webpack / Vite 配置优化、Antd 组件库及 <strong>echarts</strong> 可视化，能高保真还原设计稿。</li>
                 <li><strong>后端 / 全栈</strong>：熟悉 <strong>Node.js</strong>、<strong>Ruby on Rails</strong> 后端与 <strong>Next.js</strong> SSR，了解 <strong>Go + Gin + GORM</strong> 分层开发；掌握 <strong>RESTful</strong> API 设计、JWT / Session 鉴权、SSE 流式响应，具备从 0 到 1 独立交付并上线全栈项目的经验。</li>
                 <li><strong>存储与运维</strong>：熟悉 <strong>MySQL</strong>、<strong>Redis</strong>（缓存 / 验证码 / Token），了解 <strong>RabbitMQ</strong> 消息队列（异步 / 解耦 / 削峰）；了解 <strong>Docker</strong> / Docker Compose 容器化编排与 <strong>nginx</strong> 部署。</li>

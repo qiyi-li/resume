@@ -123,6 +123,45 @@ h6 {
 }
 
 @media print {
+    body {
+        margin: 0;
+        background: white;
+        font-size: 14px;
+    }
+
+    article {
+        width: auto;
+        min-height: auto;
+        padding: 2em;
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    p,
+    li {
+        margin: .35em 0;
+        line-height: 1.25;
+    }
+
+    .jobs > ol > li {
+        margin: 8px 0;
+    }
+
+    .jobs header {
+        margin-bottom: 8px;
+    }
+
+    .projects > ol > li {
+        margin-bottom: 12px;
+    }
+
     #skills {
         display: none;
     }

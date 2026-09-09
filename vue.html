@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>李齐一-前端开发工程师简历</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<article>
+    <section class="bio">
+        <h1>李齐一</h1>
+        <img src="./images/picture.jpg" alt="个人照片" height="100">
+        <p>男 | 前端开发工程师 / AI 应用前端 | 西安</p>
+        <p>
+            手机：<a href="tel:13201759671">13201759671</a> | 微信：13201759671 | 邮箱：<a href="mailto:llqiyi@outlook.com">llqiyi@outlook.com</a>
+        </p>
+        <p>毕业院校：西安航空学院 | 本科 | 测控技术与仪器</p>
+    </section>
+
+    <section class="summary">
+        <h2>个人简介</h2>
+        <p>
+            6 年前端开发经验，具备 <strong>Vue 2 / Vue 3</strong> 项目实践：使用 Vue 3、TypeScript、Vite、Pinia 独立开发并部署全栈 AI 应用，也有 Vue 2、Vuex、Vue Router、Element UI 项目维护经验。长期参与云原生、研发效能与企业级中后台建设，能够处理复杂表单、状态管理、实时通信和数据可视化等场景；同时具备扎实的 <strong>React + TypeScript</strong> 大型项目经验，以及 Coding Agent、代码智能评审和 MCP 工具平台实践。
+        </p>
+    </section>
+
+    <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+            <li>
+                <header>
+                    <h4>纬致芯创科技有限公司</h4>
+                    <span><time>2023年6月</time>~<time>2026年7月</time></span>
+                </header>
+                <ul>
+                    <li>负责云原生研发效能产品前端开发，覆盖 <strong>CNAP</strong> 应用部署、<strong>iCode</strong> 代码托管与 <strong>OneTool（MCP）</strong> AI 工具服务中心等产品线。</li>
+                    <li>基于 <strong>React 18、TypeScript 和 qiankun 微前端</strong>架构，负责复杂表单、跨页面状态、实时日志、终端交互及数据可视化等核心场景。</li>
+                    <li><strong>独立负责 CNAP 核心模块的大部分需求</strong>，覆盖应用、环境、部署及运行时；在 iCode 落地代码智能评审、Rules 管理和团队数据视图；负责 OneTool Server 创建、编辑及发布流程。</li>
+                    <li>与产品、设计和服务端协作完成需求拆解、接口协议确认、方案实现与代码评审，并协助团队成员定位开发问题。</li>
+                </ul>
+            </li>
+            <li>
+                <header>
+                    <h4>北京星华惠康科技股份有限公司</h4>
+                    <span><time>2020年2月</time>~<time>2023年5月</time></span>
+                </header>
+                <ul>
+                    <li>负责医疗信息化产品的 PC 管理端、移动端和小程序开发，完成疫情隔离管理、排班预约叫号等系统建设。</li>
+                    <li>负责复杂业务页面、响应式适配、跨浏览器兼容及 WebSocket 实时通信，并协助团队成员排查开发问题。</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+            <li>
+                <header><h3>GopherAI 全栈 AI 应用平台（个人项目 · Vue 3 + Go）</h3></header>
+                <p>独立开发的全栈 AI 应用平台，集成智能对话、RAG 知识库问答与图像识别，覆盖 Vue 前端交互、Go 后端、数据存储及容器化部署。</p>
+                <ul>
+                    <li><strong>前端架构</strong>：使用 <strong>Vue 3、TypeScript、Vite、Pinia、Vue Router</strong> 搭建前端工程，按业务拆分页面与组件，通过路由守卫和 JWT 完成登录鉴权。</li>
+                    <li><strong>流式对话</strong>：接入通义千问等 LLM，前端消费 <strong>SSE</strong> 流式响应并增量渲染回答，处理生成状态、内容拼接、异常提示及会话切换。</li>
+                    <li><strong>知识库与图像识别</strong>：实现文件上传、异步索引状态与 RAG 问答交互；后端通过 RabbitMQ 完成带 overlap 的文本切分、Embedding、Redis Stack 向量检索和有限重试，前端展示来源片段与相似度；使用 ONNX Runtime 完成图片分类推理。</li>
+                    <li><strong>全栈能力</strong>：使用 Go、Gin、GORM 实现 RESTful API、邮箱验证码注册和 JWT 鉴权，以 MySQL、Redis、RabbitMQ 完成持久化、缓存和异步消息处理。</li>
+                    <li><strong>部署运行</strong>：使用多阶段 Dockerfile 构建 Vue/Nginx、Go 和 MCP 镜像，通过 Docker Compose 编排完整应用及 MySQL、Redis Stack、RabbitMQ，配置健康检查、依赖启动与持久化卷，支持一键构建启动。</li>
+                </ul>
+                <p>技术栈：<strong>Vue 3、TypeScript、Vite、Pinia、Vue Router</strong>、Axios、SSE、Go、Gin、MySQL、Redis、RabbitMQ、Docker。</p>
+                <span><a href="https://github.com/qiyi-li/GopherAI">源码链接</a></span>
+            </li>
+
+            <li>
+                <header><h3>CNAP 云原生应用部署平台</h3></header>
+                <p>面向大型业务上云场景的应用部署与运维平台。作为<strong>前端核心开发人员</strong>，长期负责应用、环境、部署、运行时、集群及权限审批等模块。</p>
+                <ul>
+                    <li><strong>复杂部署流程</strong>：实现部署智能拦截、多人工检查、回滚策略、临时部署及 Stage 环节控制，处理多步骤状态展示、表单联动和操作约束。</li>
+                    <li><strong>集群管理</strong>：从 0 到 1 建设 CCE 集群、调度策略与联邦集群管理页面，完成集群分组、版本及 GPU Quota 数据可视化。</li>
+                    <li><strong>实时运维</strong>：建设 Pod 详情与跨页批量操作，使用 WebSocket、xterm 实现实时日志、WebSSH 和 Debug 交互。</li>
+                </ul>
+                <p>技术栈：<strong>React 18、TypeScript、qiankun</strong>、Formik、Ant Design、WebSocket、xterm。</p>
+            </li>
+
+            <li>
+                <header><h3>iCode 研发效能平台（AI 原生）</h3></header>
+                <p>公司内部代码托管与研发协作平台，参与 Coding Agent、代码智能评审、Rules 管理及团队实践数据等 AI 原生能力建设。</p>
+                <ul>
+                    <li>实现按代码库分支生成和管理 Rules 的前端流程，帮助团队维护 Coding Agent 上下文。</li>
+                    <li>改造代码评审入口，接入数字员工完成代码解读、问题定位与修复建议展示。</li>
+                    <li><strong>独立完成</strong> Coding Agent 实践榜单和团队、个人用量视图，使用 echarts 呈现业务数据。</li>
+                </ul>
+                <p>关键数据：智能评审累计 <strong>PV 2w+、UV 4900+</strong>；生成 Rules 日均 PV 150+。</p>
+            </li>
+
+            <li>
+                <header><h3>OneTool（MCP）AI 工具平台</h3></header>
+                <p>参与公司内部 <strong>MCP 服务中心</strong>一期建设，负责 Server 创建、编辑及发布流转的前端设计与实现，处理多步骤创建、<strong>动态配置表单和 JSON Schema 转换</strong>，并参与广场发现、订阅、收藏及调试链路建设。</p>
+                <p>关键数据：MCP 广场累计正式发布各类型 <strong>MCP Server 200+</strong>。</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+            <ul>
+                <li><strong>Vue 技术栈</strong>：熟练使用 Vue 3、TypeScript、Composition API、Vue Router、Pinia、Vite 和 Axios，具备组件拆分、状态管理、路由鉴权及 SSE 增量渲染经验；具有 Vue 2、Options API、Vuex、Element UI 和 Webpack 项目维护经验。</li>
+                <li><strong>React / 前端工程</strong>：具备 6 年 React、TypeScript 企业级项目经验，熟练使用 React Hooks、Redux 和 Ant Design；熟悉 qiankun 微前端、复杂状态管理、WebSocket 实时通信、性能分析及常见渲染问题排查。</li>
+                <li><strong>AI 应用</strong>：参与 MCP 工具平台、Coding Agent Rules、代码智能评审及 AI IDE 入口接入相关功能建设；具备 LLM API、RAG、Embedding、向量检索和 SSE 流式响应实践。</li>
+                <li><strong>全栈与部署</strong>：具备 Go、Gin、GORM 全栈实践，熟悉 RESTful API、JWT 鉴权及分层设计；使用过 MySQL、Redis、RabbitMQ、Docker Compose 和 nginx。</li>
+            </ul>
+        </div>
+    </section>
+</article>
+</body>
+</html>

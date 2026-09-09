@@ -105,7 +105,7 @@
                 <p>
                     负责 MCP Server 创建、编辑及发布流转的前端设计与实现，处理多步骤创建流程、动态配置表单及 <strong>JSON Schema</strong> 转换；参与广场发现、订阅、收藏和调试链路建设。
                 </p>
-                <p>关键数据：MCP 广场累计正式发布各类型 MCP Server 207 个。</p>
+                <p>关键数据：MCP 广场累计正式发布各类型 MCP Server 200+。</p>
                 <p>技术栈：<strong>React 18</strong>、<strong>TypeScript</strong>、Formik、JSON Schema。</p>
             </li>
             <li>
@@ -116,9 +116,9 @@
                 <ul>
                     <li><strong>Vue 前端</strong>：使用 <strong>Vue 3、TypeScript、Vite、Pinia、Vue Router</strong> 搭建前端工程，完成登录注册、会话管理、文件与图片上传等功能，并通过路由守卫和 JWT 实现访问控制。</li>
                     <li><strong>AI 对话</strong>：接入通义千问等 LLM，支持多轮对话与 <strong>SSE</strong> 流式输出；使用 RabbitMQ 异步持久化会话消息，将消息写入与对话响应解耦。</li>
-                    <li><strong>RAG 知识库</strong>：实现文档解析、文本切分、向量化入库、相似度检索和上下文拼接，并在回答中使用检索到的私有知识。</li>
+                    <li><strong>RAG 知识库</strong>：实现带 overlap 的段落优先文本切分、Embedding、Redis Stack 向量检索与上下文拼接；通过 RabbitMQ 异步执行索引任务，使用 MySQL 管理处理状态与有限重试，并在前端展示来源片段和相似度。</li>
                     <li><strong>图像识别</strong>：使用 ONNX Runtime 加载 MobileNetV2 模型，完成图片解码、缩放、归一化和分类推理。</li>
-                    <li><strong>用户与运行环境</strong>：实现邮箱验证码注册、JWT 鉴权和 Redis Token 缓存；使用 Docker Compose 编排应用及 MySQL、Redis、RabbitMQ 等依赖，支持完整流程的一键启动和演示。</li>
+                    <li><strong>用户与容器化</strong>：实现邮箱验证码注册与 JWT 鉴权，使用 Redis 保存限时验证码和 RAG 向量索引；通过多阶段 Dockerfile 与 Docker Compose 统一编排 Vue/Nginx、Go、MCP、MySQL、Redis Stack 和 RabbitMQ，配置健康检查、依赖启动及持久化卷，支持完整应用一键构建启动。</li>
                 </ul>
                 <p>技术栈：<strong>Vue 3</strong>、<strong>TypeScript</strong>、Vite、Pinia、Vue Router、Axios、SSE、<strong>Go</strong>、Gin、GORM、MySQL、Redis、RabbitMQ、RAG、Embedding、ONNX Runtime、Docker。</p>
                 <span>
